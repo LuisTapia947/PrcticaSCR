@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo CSR</title>
+    <script src="../js/utilidades.js"></script>
+</head>
+
+<body>
+
+    <script>
+
+        h1 = createNodoConTexto("h1", "Ejemplo csr")
+        p = createNodoConTexto("p", "ejemplo de renderiza la pagina del lado del cliente")
+        h2 = createNodoConTexto("h2", "hola")
+        Image = createImages("../recursos/imagenes/descarga.jpg")
+
+        ul = createNodo("ul")
+        liUno = createNodoConTexto("li","manzanas")
+        liDos = createNodoConTexto("li","Uvas")
+        liTres = createNodoConTexto("li","peras")
+
+        adicionarNodoContenedor(liUno,ul)
+        adicionarNodoContenedor(liDos,ul)
+        adicionarNodoContenedor(liTres,ul)
+
+        adicionarNodoBody(h1)
+        adicionarNodoBody(p)
+        adicionarNodoBody(h2)
+        adicionarNodoBody(Image)
+        adicionarNodoBody(ul)
+    </script>
+
+</body>
+
+</html>
